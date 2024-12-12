@@ -1,0 +1,74 @@
+/* Variables de colores */
+$primary-color: #c612f3;
+/* Naranja dorado */
+$secondary-color: #e9d7e7;
+/* Rojo dulce */
+$background-color: #fde6ff;
+/* Rosa claro */
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $background-color;
+    color: #333;
+}
+
+/* Encabezado */
+.header {
+    background-color: $secondary-color;
+    color: white;
+    padding: 1rem;
+}
+
+/* Tarjetas de Postres */
+.card {
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    .card-content {
+        text-align: center;
+        padding: 1rem;
+        background-color: rgb(238, 175, 200);
+    }
+
+    .button {
+        background-color: $secondary-color;
+
+        &:hover {
+            background-color: darken($secondary-color, 10%);
+        }
+    }
+}
+
+/* Animación para la Introducción */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.hero {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Footer */
+.footer {
+    background-color: $secondary-color;
+    padding: 2rem 0;
+    color: white;
+    text-align: center;
+}
+.hero .title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* Variables de colores */
+/* Naranja dorado */
+/* Rojo dulce */
+/* Rosa claro */
+/* Body */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fde6ff;
+  color: #333;
+}
+
+/* Encabezado */
+.header {
+  background-color: #e9d7e7;
+  color: white;
+  padding: 1rem;
+}
+
+/* Tarjetas de Postres */
+.card {
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card .card-content {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgb(238, 175, 200);
+}
+.card .button {
+  background-color: #e9d7e7;
+}
+.card .button:hover {
+  background-color: #d7b6d3;
+}
+
+/* Animación para la Introducción */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.hero {
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Footer */
+.footer {
+  background-color: #e9d7e7;
+  padding: 2rem 0;
+  color: white;
+  text-align: center;
+}
+
+.hero .title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}/*# sourceMappingURL=styles.css.map */
